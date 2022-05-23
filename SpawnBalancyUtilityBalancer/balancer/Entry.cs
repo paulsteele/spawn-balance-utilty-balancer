@@ -21,6 +21,7 @@ public class Entry
     [Index(7)]
     public int MaxGroup { get; set; }
 
+    [Ignore]
     public string Source => Entity.Split(":")[0].Trim();
     public override string ToString()
     {
